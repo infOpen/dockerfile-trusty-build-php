@@ -6,6 +6,7 @@ RUN apt-get update && \
     apt-get install -y  php5 \
                         php5-cli \
                         php5-xdebug \
+                        php5-xsl \
                         graphviz \
                         libgv-php5
 
