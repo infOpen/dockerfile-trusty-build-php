@@ -6,7 +6,8 @@ RUN apt-get update && \
     apt-get install -y  php5 \
                         php5-cli \
                         php5-xdebug \
-                        graphviz
+                        graphviz \
+                        libgv-php5
 
 # Download and install composer
 RUN curl -sS https://getcomposer.org/installer | \

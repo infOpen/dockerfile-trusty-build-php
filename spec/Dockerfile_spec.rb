@@ -86,6 +86,7 @@ describe 'Dockerfile' do
         expect(package('php5-cli')).to be_installed
         expect(package('php5-xdebug')).to be_installed
         expect(package('graphviz')).to be_installed
+        expect(package('libgv-php5')).to be_installed
     end
 
     describe file('/usr/local/bin/composer') do
