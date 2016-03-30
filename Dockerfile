@@ -5,6 +5,7 @@ MAINTAINER Alexandre Chaussier <a.chaussier@infopen.pro>
 RUN apt-get update && \
     apt-get install -y  php5 \
                         php5-cli \
+                        php5-mongo \
                         php5-xdebug \
                         php5-xsl \
                         graphviz \
