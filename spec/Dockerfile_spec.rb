@@ -96,6 +96,12 @@ describe 'Dockerfile' do
       it { should be_file }
     end
 
+    describe command('locale') do
+        its(:stdout) { should match /LANG=en_US.UTF-8/ }
+        its(:stdout) { should match /LC_ALL=en_US.UTF-8/ }
+        its(:exit_status) { should eq 0 }
+    end
+
     # Functions
     #----------
 
